@@ -25,8 +25,6 @@ function pluton_child_enqueue_parent_style() {
 	$version = $theme->get( 'Version' );
 	// Load the stylesheet
 	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.min.css', array(), $version );
-	// If your child theme's stylesheet is not loaded automatically, activate this line
-	//wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'parent-style' ), $version );
 	
 }
 add_action( 'wp_enqueue_scripts', 'pluton_child_enqueue_parent_style' );
