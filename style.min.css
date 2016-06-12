@@ -9,32 +9,3 @@ Version: 1.0
 */
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
-
-/* Center Logo For Mobile Devices (adjust max-width accordingly) */
-@media only screen and (max-width: 959px) {
-	#site-header #site-logo {    
-		float: none;    
-		display: block;    
-		text-align: center;    
-		width: 100%;
-		max-width: none;
-	}
-	#site-logo #site-logo-inner {    
-		display: block;
-	}
-}
-
-/* This part centers the mobile menu toggle - ONLY add his code if you want this also*/
-#pluton-mobile-menu-icon {
-    position: inherit !important;
-    top: auto !important;
-    right: auto !important;
-    margin: 0 !important;
-    padding-top: 20px;
-    text-align: center;
-}
-
-#pluton-mobile-menu-icon a {
-    display: inline-block;
-    float: none !important;
-}
